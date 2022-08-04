@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { allDataType } from "../shared/types";
 
 interface MainProjectsProps {
-  projects: allDataType["projects"];
+  projects: allDataType["projects1"];
 }
 
 const MainProjects: FC<MainProjectsProps> = ({ projects }) => {
