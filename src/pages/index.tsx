@@ -1,5 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
-
+import Head from 'next/head'
 import Contact from "../components/Contact";
 import Cursor from "../components/Cursor";
 import { GET_ALL_DATA } from "../graphql/queries";
@@ -35,6 +35,10 @@ const Home: NextPage<HomeProps> = ({ data }) => {
       <Cursor />
 
       <div data-scroll-container ref={containerRef}>
+        <Head>
+        <title>Portfolio</title>
+        <link rel="icon" href="https://i.pinimg.com/474x/af/09/41/af0941ba06185e9846af909ba9350baf--letter-b-logo-b-logo-design.jpg" />
+      </Head>
         <Intro />
         <Who />
         <Skills skills={data.skills1} />
